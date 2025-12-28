@@ -6,9 +6,7 @@ let isEditSubjectMode = false;
 let selectedCourseId = null; // For Subject Management
 let allLogs = []; // For Activity Logs filtering
 
-// ==========================================
-// 1. INITIALIZATION & NAVIGATION
-// ==========================================
+
 document.addEventListener("DOMContentLoaded", () => {
     loadUsers();
     loadCourses();

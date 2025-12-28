@@ -14,3 +14,10 @@ Teaching Staff:
 Admin:
   Username:	admin
   Password:	admin123
+
+Members:
+Araojo, Grezabeth G. 
+Cananga, Shierafel Kim B.
+Damayo, Edison Philip D. 
+Galit, Rugelyn D.
+Ramosa, Jummel Mark M.

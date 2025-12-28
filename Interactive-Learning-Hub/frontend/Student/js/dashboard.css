@@ -1,0 +1,95 @@
+/* =========================================
+   STUDENT DASHBOARD CSS (Restored Design)
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700;800&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; background-color: #F3F4F6; color: #1F2937; }
+
+/* UTILITIES */
+.max-w-7xl { max-width: 1280px; margin: 0 auto; width: 100%; }
+.px-4 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.mb-6 { margin-bottom: 1.5rem; }
+
+/* NAVBAR (Blue Background) */
+nav {
+    background-color: #2563EB; /* The Blue from your screenshot */
+    color: white;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.nav-content { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+.brand-text { font-weight: 800; font-size: 1.25rem; font-style: italic; letter-spacing: 0.5px; }
+
+/* HEADER SECTION */
+.sub-header-container { background: white; padding: 15px 0; }
+.sub-header { display: flex; justify-content: space-between; align-items: center; }
+.page-title { font-size: 1.5rem; font-weight: 800; color: #111827; margin: 0; }
+
+/* FILTER BUTTON */
+.filter-container { margin-bottom: 2rem; position: relative; display: inline-block; }
+.filter-btn {
+    background: white; border: 1px solid #E5E7EB; padding: 0.5rem 1rem;
+    border-radius: 6px; cursor: pointer; font-size: 0.9rem; font-weight: 600;
+    display: flex; align-items: center; gap: 8px; color: #374151;
+    margin: 20px;
+
+}
+.filter-dropdown {
+    display: none; position: absolute; top: 110%; left: 0;
+    background: white; border: 1px solid #E5E7EB; border-radius: 6px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); z-index: 50; width: 160px;
+}
+.filter-dropdown.show { display: block; }
+.filter-option { padding: 8px 12px; cursor: pointer; font-size: 0.9rem; }
+.filter-option:hover { background: #EFF6FF; color: #2563EB; }
+
+/* CARDS GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Wide cards like screenshot */
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/* CARD DESIGN (Exact Match) */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border-top: 6px solid #3b82f6; /* Default top border */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Align button to bottom */
+}
+
+.card-code { font-weight: 800; font-size: 1.25rem; color: #ef4444; margin-bottom: 0.25rem; }
+.card-title { font-weight: 600; color: #374151; font-size: 1rem; }
+
+.btn-view {
+    color: white; border: none; padding: 8px 24px; border-radius: 6px;
+    font-size: 0.9rem; cursor: pointer; font-weight: 700;
+    transition: opacity 0.2s;
+}
+.btn-view:hover { opacity: 0.9; }
+
+/* RECENT VIEW SECTION */
+.recent-view-container {
+    background: white; border-radius: 12px; padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+.section-title { font-size: 1rem; font-weight: 700; color: #111827; }
+.recent-list { display: flex; flex-direction: column; }
+.recent-item {
+    display: flex; justify-content: space-between; padding: 1rem 0;
+    border-bottom: 1px solid #F3F4F6; cursor: pointer;
+}
+.recent-item:last-child { border-bottom: none; }
+.recent-title { font-weight: 600; color: #374151; }
+.recent-year { color: #9CA3AF; font-size: 0.9rem; }

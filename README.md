@@ -1,5 +1,5 @@
 Deployed Webiste:
-https://interactive-learning-hub.onrender.com
+https://interactive-learning-hub.onrender.com/Student/index.html
 
 How to Login:
 
